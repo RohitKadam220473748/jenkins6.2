@@ -5,49 +5,42 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Stage 1: Compiling and packaging the source code"
-                // Add actual build steps here
             }
         }
 
         stage('Unit and Integration Tests') {
             steps {
                 echo "Stage 2: Executing unit and integration tests"
-                // Add actual test automation tool commands here
             }
         }
 
         stage('Code Analysis') {
             steps {
                 echo "Stage 3: Performing code analysis to maintain quality (e.g., SonarQube)"
-                // Add actual code analysis tool commands here
             }
         }
 
         stage('Security Scan') {
             steps {
                 echo "Stage 4: Conducting a security scan for vulnerabilities"
-                // Add actual security scan tool commands here
             }
         }
 
         stage('Deploy to Staging') {
             steps {
                 echo "Stage 5: Deploying to a staging server (e.g., AWS EC2)"
-                // Add actual deployment steps here
             }
         }
 
         stage('Integration Tests on Staging') {
             steps {
                 echo "Stage 6: Running integration tests in the staging environment"
-                // Add actual integration test commands here
             }
         }
 
         stage('Deploy to Production') {
             steps {
                 echo "Stage 7: Deploying to a production server (e.g., AWS EC2)"
-                // Add actual deployment steps here
             }
         }
     }
